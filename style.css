@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+.u_text-center {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Header*/
+.navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 14px 24px
+}
+
+/* Banner Section */
+#banner {
+    background-color: #dbdbdb;
+}
+
+.banner-image {
+    display: block;
+    width: 100%;
+}
+
+#banner h1 {
+    font-size: 36px;
+}
+
+#banner p {
+    padding: 32px 0 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner-content {
+    padding: 32px 16px;
+}
+
+#banner a.start-here {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    background-color: #9b9b9b;
+    text-align: center;
+    padding: 8px 0;
+}
+
+#banner a.start-here:hover {
+    background-color: #4a4a4a;
+}
+
+/*Article*/
+#article {
+  background-color: #f3f5f5;
+  padding-bottom: 16px;
+}
+
+#article li {
+    padding: 16px; /*a kártyák közti hely így jobban néz ki*/
+}
+
+#article li:hover {
+    background-color: #d8d8d8;
+}
+
+#article .card-text {
+    padding: 0 16px;
+}
+
+#article picture {
+    display: block;
+    max-width: 100%;
+    padding-bottom: 16px;
+}
+
+.card-text p {
+    padding: 8px 0;
+}
+ .card-text a {
+     color: #4A90E2;
+     font-size: 14px;
+ }
+
+/*Start learning*/
+
+.start {
+    padding: 32px 16px;
+    background-color: #f5f4f5;
+    border-top: 1px solid #e9eaea;
+    border-bottom: 1px solid #e9eaea;
+}
+
+.start-head {
+    padding-bottom: 16px;
+ }
+
+.card {
+    background-color: #d8d8d8;
+    padding: 16px;
+    margin: 8px 0;
+}
+
+/*Thesis*/
+
+#thesis {
+    background-color: #f3f5f5;
+}
+
+.thesis {
+    padding-top: 32px;
+}
+
+video {
+    width: 100%;
+    padding: 24px 0; /*így jobban néz ki, jobban hasonlít a képre */
+}
+
+/*Footer*/
+.footer {
+    background-color: #f3f5f5;
+    display: flex;
+}
+
+.footer-text {
+    padding: 16px;
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .u_mobile-hidden {
+        display: none;
+    }
+}
+/*desktop view*/
+@media only screen and (min-width: 769px) {
+
+    .u_width-60 {
+        width: 60%;
+        padding: 32px 24px;
+    }
+
+    .u_width-40 {
+        width: 40%;
+        padding: 32px 0px;
+    }
+
+    .u_width-35 {
+        width:35%;
+        padding: 16px;
+    }
+
+    .u_width-65 {
+        width: 65%;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .u_border-box {
+        box-sizing: border-box;
+    }
+
+    /*Header*/
+    .navbar-mobile {
+        display: none;
+    }
+
+    .header-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brand {
+        display: flex;
+    }
+
+    .brand-link {
+        padding-left: 24px;
+    }
+
+    .brand-name {
+        font-size: 28px;
+    }
+
+    .navigation-desktop {
+        display: flex;
+        padding: 23px 24px;
+    }
+
+    .navigation-desktop li {
+        padding-left: 16px;
+    }
+
+    .brand-name-span {
+        font-weight: 500;
+        color: #9b9b9b;
+    }
+
+    /* Banner Section */
+    #banner {
+        display: flex;
+        background-color: #d8d8d8;
+    }
+  
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 64px;
+    }
+
+   /*Article*/
+    #article {
+        display: flex;
+        padding-bottom: 0px;
+    }
+
+    #article .image {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    #article h1 {
+        font-size: 30px;
+    }
+
+    .desktop-text {
+        padding: 24px 0 32px;
+    }
+
+    .emanuel {
+        font-size: 12px;
+    }
+       
+    #article li {
+        display: flex; 
+        padding: 0;
+    }
+
+    #article .card-text {
+        padding-left: 0;
+    }
+
+    /*Start learning*/
+    .start {
+        background-color: #eaebec;
+    }
+
+    /*a kártyák közti hely 32px, de a fix méret miatt az oldalt beállított 72px (56+16) padding nem tud érvényesülni*/
+    .card {
+        padding: 0;
+        margin: 16px;
+        width: 235px;
+        height: 260px;
+        background-color: #fff;
+    }
+    
+    .card img {
+    width: 100%;
+    }
+
+    .card div {
+    padding: 16px;
+    }
+
+    .card p {
+        color: #767676;
+    }
+
+    .card .courses {
+        text-transform: uppercase;
+        padding: 8px 0;
+    }
+
+    .start ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 56px;
+    }
+
+    /*Thesis*/
+    .thesis-container {
+        display: flex;
+    }
+  
+    .thesis-head {
+        padding-bottom: 8px;
+    }
+
+    .card-container {
+        display: flex;
+    }
+
+    .thesis-cards li:hover {
+        background-color: #d8d8d8;
+    }
+
+    .thesis-text {
+        color: #767676;
+    }
+
+    video {
+        padding-top: 0;
+    }
+
+    /*Footer*/
+    .footer {
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #e0e2e2;
+    }
+
+    .footer-text {
+        padding: 16px 24px 48px;
+        color: #767676;
+    }
+
+    .nav-desktop {
+        display: flex;
+        padding-right: 24px;
+    }
+
+    .nav-desktop li {
+        padding: 16px 0 48px 12px;
+    }
+
+    .nav-desktop a {
+        font-size: 12px;
+        color: #767676;
+    }
+}
